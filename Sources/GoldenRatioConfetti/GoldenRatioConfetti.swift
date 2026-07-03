@@ -425,9 +425,3 @@ public struct GoldenRatioConfetti: View {
         progress * progress
     }
 }
-
-#Preview {
-    GoldenRatioConfetti()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black)
-}

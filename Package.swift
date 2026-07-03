@@ -1,12 +1,12 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 5.9
 
 import PackageDescription
 
 let package = Package(
     name: "GoldenRatioConfetti",
     platforms: [
-        .iOS(.v17),
-        .macOS(.v15),
+        .iOS(.v15),
+        .macOS(.v12),
     ],
     products: [
         .library(
