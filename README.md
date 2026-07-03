@@ -15,9 +15,9 @@ Perfect for:
 
 ## Preview
 
-Add a GIF or video preview here:
+https://github.com/user-attachments/assets/942fe9e9-5a81-4a25-ac28-7ce9b8d4b42e
 
-![GoldenRatioConfetti Preview](preview.gif)
+
 
 ## Features
 
