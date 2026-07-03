@@ -380,7 +380,7 @@ public struct GoldenRatioConfetti: View {
             withExtension: "png",
             subdirectory: "Particles"
         ) else {
-            return SKTexture(imageNamed: name)
+            preconditionFailure("GoldenRatioConfetti is missing bundled particle resource: \(name).png")
         }
 
         #if canImport(UIKit)
@@ -388,18 +388,16 @@ public struct GoldenRatioConfetti: View {
             let data = try? Data(contentsOf: url),
             let image = UIImage(data: data)
         else {
-            return SKTexture(imageNamed: name)
+            preconditionFailure("GoldenRatioConfetti could not load bundled particle resource: \(name).png")
         }
 
         return SKTexture(image: image)
         #elseif canImport(AppKit)
         guard let image = NSImage(contentsOf: url) else {
-            return SKTexture(imageNamed: name)
+            preconditionFailure("GoldenRatioConfetti could not load bundled particle resource: \(name).png")
         }
 
         return SKTexture(image: image)
-        #else
-        return SKTexture(imageNamed: name)
         #endif
     }
 

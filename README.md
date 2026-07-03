@@ -2,6 +2,8 @@
 
 A SwiftUI and SpriteKit golden ratio confetti effect.
 
+The particle images are bundled with the package, so apps do not need to add or configure any assets.
+
 ## Installation
 
 Add this package in Xcode:
